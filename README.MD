@@ -3,6 +3,9 @@
 A portable toolkit that lets you drop battle-tested CI / CD pipelines, Git hooks and helper scripts straight into any
 repository—or fetch them on-demand from your IDE via `lazylosad.sh`.
 
+It doesn't use any tags, links in comments, or other watermarks. Doesn't require internet, non-standard packages, or
+root access. Can be safely used in any projects.
+
 * **Language-agnostic core (`template.any`)** – minimal yet complete release pipeline, issue templates and local Git
   hooks that work for every stack.
 * **Go-opinionated layer (`template.goland`)** – everything above plus Go-specific helpers (`go_tidy_all.sh`,

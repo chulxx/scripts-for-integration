@@ -26,7 +26,7 @@ VERSION_PATCH=$(bash "$script_dir/sys.sh" -pa)
 
 file_const="$root_path/$dir_path$file_name"
 
-echo "// Code generated using '_run/scripts/creator_const_Go.sh'; DO NOT EDIT." > "$file_const"
+echo "// Code generated using '_run/scripts/go_creator_const.sh'; DO NOT EDIT." > "$file_const"
 echo "package $package_name" >> "$file_const"
 
 echo "" >> "$file_const"
