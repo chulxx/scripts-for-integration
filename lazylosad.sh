@@ -59,6 +59,17 @@ echo "⬇️  Downloading $choice..."
 curl -#L -o "$archive" "$url"
 
 echo "📦  Unpacking to $(pwd)..."
-unzip -oq "$archive" -d .
+unzip -oq "$archive" -d "$tmpdir/unzip"
+
+first_item=$(find "$tmpdir/unzip" -mindepth 1 -maxdepth 1 | head -n 1)
+dir_count=$(find "$tmpdir/unzip" -mindepth 1 -maxdepth 1 -type d | wc -l)
+
+shopt -s dotglob
+if [[ -d "$first_item" && $dir_count -eq 1 ]]; then
+  mv "$first_item"/* .
+else
+  mv "$tmpdir/unzip"/* .
+fi
+shopt -u dotglob
 
 echo "🎉  Done!"
