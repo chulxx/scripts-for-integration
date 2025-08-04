@@ -1,0 +1,105 @@
+name: "Release"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref_name }}
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch from which we make a release"
+        default: "main"
+        required: false
+
+env:
+  RELEASE_COMMAND: "" #"bash _run/scripts/json_creator_const.sh && git add -f target"
+  PUSH_BRANCH: ${{ github.repository.default_branch }}
+
+jobs:
+  release:
+    name: "🚀 Publication of release"
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: 🛎️ Checkout ${{ env.PUSH_BRANCH }}
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.PUSH_BRANCH }}
+          fetch-depth: 1
+
+      - uses: ./.github/actions/generate-build-env
+
+      - name: 🗒️ Source env
+        shell: bash
+        run: cat build_env.txt >> $GITHUB_ENV
+
+      - uses: ./.github/actions/github-setup-user
+
+      - name: 📦 Squeezing templates in zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          ASSETS_DIR="release_assets"
+          mkdir -p "$ASSETS_DIR"
+          
+          for dir in template/*; do
+            [ -d "$dir" ] || continue    
+            base=$(basename "$dir")
+            echo "→ archiving $dir → $ASSETS_DIR/template.${base}.zip"
+            (cd template && zip -r "../$ASSETS_DIR/template.${base}.zip" "$base")
+          done
+
+      - name: 🏷️ Create Commit without “heavy” and tag ${BUILD_VER}
+        id: tag
+        shell: bash
+        env:
+          GOFLAGS: -mod=mod
+        run: |
+          set -Eeuo pipefail
+          ORIG_SHA=$(git rev-parse HEAD)
+          
+          ${{ env.RELEASE_COMMAND }}
+
+          git rm -f -r --cached --ignore-unmatch .github .idea _generate _run cli gen.go .gitignore
+          #git rm -f --cached --ignore-unmatch $(git ls-files '*.bin' '*.md')
+          
+          git commit -m "release(${BUILD_VER}): strip heavy assets"
+          git tag -a "${BUILD_VER}" -m "Release ${BUILD_VER}"
+          git push origin "${BUILD_VER}"
+
+          git reset --hard "$ORIG_SHA"
+
+      - name: 🚀 Create a release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.BUILD_VER }}
+          name: ${{ env.BUILD_VER }}
+          generate_release_notes: true
+          files: release_assets/*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ✔️ Finish
+        run: |
+          new_version=$(./_run/scripts/sys.sh --increment --minor)
+          
+          git add ./_run/values/ver.txt
+          git commit -m "actions [$new_version] "$'\n'"Build: [${BUILD_VER}] >> [$new_version]"
+          git push origin HEAD:main
+          
+          echo "🎉 Release $BUILD_VER successfully published!"
+
+      - name: 🧹 Remove temporary artifacts
+        if: success()
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: |
+            build-env
+            src-gen
+            ${{ env.BUILD_NAME }}.*
+          failOnError: false
