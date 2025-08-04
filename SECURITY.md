@@ -21,7 +21,6 @@ If you cannot upgrade and need a back-port, open an Issue marked **[Security-Req
 ## Reporting a Vulnerability
 
 1. **Email:** `git@bookshelf-writer.fun`  
-   *Encrypt your message* using our PGP key (fingerprint: `4A1B 2C3D … E9F0`).
 
 2. **Include at minimum**
    - Affected version/commit hash  
@@ -59,26 +58,7 @@ We align with [CVSS 4.0](https://www.first.org/cvss/) scoring:
 
 ---
 
-## Credits & Acknowledgements
-
-We publicly thank reporters (with consent) in the release notes and `SECURITY-ACKNOWLEDGEMENTS.md`.
-
----
-
-## Hall of Fame
-
-| Year | Researcher | CVE / Issue | Severity |
-|------|------------|-------------|----------|
-| 2025 | *Your Name Here* | CVE-2025-12345 | High |
-
----
-
 ## Disclaimer
 
 Security reports are handled on a best-effort basis by maintainers in their spare time.  
 This project comes with **no warranty**; refer to the [LICENSE](./LICENSE) for details.
-
-*Your responsible disclosure is greatly appreciated — thank you!*  
-```
-
-Якщо знадобиться уточнити будь-яку з секцій або додати іншу інформацію (наприклад, як підписувати патчі чи де зберігати PGP-ключ), повідомте, і я внесу зміни.
