@@ -19,7 +19,7 @@ env:
   GO_VERSION: "1.24.2"
   BUILD_CLI: "" #./cli/...
   RELEASE_COMMAND: "git add -f target"
-  PUSH_BRANCH: ${{ github.repository.default_branch }}
+  PUSH_BRANCH: ${{ github.event.repository.default_branch }}
 
 jobs:
   prepare:
